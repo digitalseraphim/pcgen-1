@@ -23,6 +23,7 @@ import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
+import impl.org.controlsfx.i18n.Localization;
 import pcgen.util.Logging;
 
 /**
@@ -135,6 +136,7 @@ public final class LanguageBundle
 			Locale.getDefault()));
 
 		bundle = ResourceBundle.getBundle(BUNDLE_NAME + ".LanguageBundle"); //$NON-NLS-1$
+		Localization.setLocale(bundle.getLocale());
 	}
 
 	/**
@@ -143,6 +145,7 @@ public final class LanguageBundle
 	public static void reload()
 	{
 		Locale l = Locale.getDefault();
+		Localization.setLocale(l);
 		if (bundle != null && ((l == null && bundle.getLocale() == null) || !l.equals(bundle.getLocale())))
 		{
 			bundle = null;

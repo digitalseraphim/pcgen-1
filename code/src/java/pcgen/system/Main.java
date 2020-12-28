@@ -29,15 +29,17 @@ import java.util.logging.Level;
 
 import javax.swing.JOptionPane;
 
+import javafx.application.Application;
+import javafx.stage.Stage;
 import pcgen.cdom.base.Constants;
 import pcgen.cdom.formula.PluginFunctionLibrary;
 import pcgen.core.CustomData;
 import pcgen.core.prereq.PrerequisiteTestFactory;
 import pcgen.facade.core.UIDelegate;
-import pcgen.gui2.PCGenUIManager;
 import pcgen.gui2.UIPropertyContext;
 import pcgen.gui2.converter.TokenConverter;
 import pcgen.gui2.dialog.RandomNameDialog;
+import pcgen.gui2.javafx.PCGenFXUIManager;
 import pcgen.gui3.JFXPanelFromResource;
 import pcgen.gui3.dialog.OptionsPathDialogController;
 import pcgen.gui3.preloader.PCGenPreloader;
@@ -68,7 +70,7 @@ import org.apache.commons.lang3.SystemUtils;
 /**
  * Main entry point for pcgen.
  */
-public final class Main
+public final class Main extends Application
 {
 
 	private static PropertyContextFactory configFactory;
@@ -82,8 +84,24 @@ public final class Main
 	private static String characterFile;
 	private static String outputFile;
 
-	private Main()
+	public Main()
 	{
+	}
+
+	@Override
+	public void start(Stage stage) throws Exception {
+		//		PCGenPreloader splash = new PCGenPreloader();
+//		PCGenTaskExecutor executor = new PCGenTaskExecutor();
+//		executor.addPCGenTask(createLoadPluginTask());
+//		executor.addPCGenTask(new GameModeFileLoader());
+//		executor.addPCGenTask(new CampaignFileLoader());
+//		executor.addPCGenTaskListener(splash);
+//		executor.run();
+//		splash.getController().setProgress(LanguageBundle.getString("in_taskInitUi"), 1.0d);
+//		FacadeFactory.initialize();
+		PCGenFXUIManager.initializeGUI(stage);
+//		splash.done();
+		PCGenFXUIManager.startGUI();
 	}
 
 	public static boolean shouldStartInCharacterSheet()
@@ -209,20 +227,7 @@ public final class Main
 		loadProperties(true);
 		initPrintPreviewFonts();
 
-		new JFXPanel();
-
-		PCGenPreloader splash = new PCGenPreloader();
-		PCGenTaskExecutor executor = new PCGenTaskExecutor();
-		executor.addPCGenTask(createLoadPluginTask());
-		executor.addPCGenTask(new GameModeFileLoader());
-		executor.addPCGenTask(new CampaignFileLoader());
-		executor.addPCGenTaskListener(splash);
-		executor.run();
-		splash.getController().setProgress(LanguageBundle.getString("in_taskInitUi"), 1.0d);
-		FacadeFactory.initialize();
-		PCGenUIManager.initializeGUI();
-		splash.done();
-		PCGenUIManager.startGUI();
+		launch();
 	}
 
 	private static void configureUI()

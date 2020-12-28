@@ -50,17 +50,17 @@ public final class CommonMenuText
 		a.putValue(Action.MNEMONIC_KEY, getMnemonic(prop));
 	}
 
-	private static int getMnemonic(String prop)
+	public static int getMnemonic(String prop)
 	{
 		return LanguageBundle.getMnemonic(MNEMONIC_SUFFIX + prop);
 	}
 
-	private static String getShortDesc(String prop, Object... substitutes)
+	public static String getShortDesc(String prop, Object... substitutes)
 	{
 		return LanguageBundle.getFormattedString(LanguageBundle.KEY_PREFIX + prop + TIP_SUFFIX, substitutes);
 	}
 
-	private static String getName(String prop, Object... substitutes)
+	public static String getName(String prop, Object... substitutes)
 	{
 		return LanguageBundle.getFormattedString(LanguageBundle.KEY_PREFIX + prop, substitutes);
 	}
