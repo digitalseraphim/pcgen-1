@@ -95,7 +95,7 @@ public final class PCGenMenuBar extends MenuBar implements CharacterSelectionLis
         PCGenActions.registerActions(root, uiContext);
         this.getMenus().add(new FileMenu());
         this.getMenus().add(createEditMenu());
-        this.getMenus().add(createSourcesMenu());
+//        this.getMenus().add(createSourcesMenu());
         this.getMenus().add(createToolsMenu());
         this.getMenus().add(createHelpMenu());
     }
