@@ -16,12 +16,9 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  *
  */
-package pcgen.gui2.javafx.util;
+package pcgen.javafx.util;
 
 import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleGroup;
@@ -39,9 +36,12 @@ public abstract class AbstractRadioListMenu<E> extends AbstractListMenu<E> imple
     private E selectedItem = null;
 
     protected AbstractRadioListMenu(Action action) {
-
         super(action);
+        group.selectedToggleProperty().addListener(this);
+    }
 
+    protected AbstractRadioListMenu(String title){
+        super(title);
         group.selectedToggleProperty().addListener(this);
     }
 

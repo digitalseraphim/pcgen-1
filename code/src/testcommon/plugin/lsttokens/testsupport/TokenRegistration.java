@@ -25,7 +25,7 @@ import java.util.Set;
 import pcgen.cdom.formula.PluginFunctionLibrary;
 import pcgen.core.bonus.BonusObj;
 import pcgen.core.prereq.PrerequisiteTestFactory;
-import pcgen.gui2.converter.TokenConverter;
+import pcgen.javafx.converter.TokenConverter;
 import pcgen.io.ExportHandler;
 import pcgen.io.exporttoken.Token;
 import pcgen.persistence.PersistenceLayerException;

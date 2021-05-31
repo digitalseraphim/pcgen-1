@@ -1,4 +1,4 @@
-package pcgen.gui2.javafx;
+package pcgen.javafx;
 
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCharacterCombination;
@@ -6,13 +6,15 @@ import javafx.scene.input.KeyCombination;
 import org.controlsfx.control.action.ActionProxy;
 import org.controlsfx.control.action.AnnotatedAction;
 import org.controlsfx.control.action.AnnotatedActionFactory;
-import pcgen.gui2.tools.Icons;
+import pcgen.facade.util.ReferenceFacade;
+import pcgen.javafx.tools.Icons;
+import pcgen.javafx.tools.PCGenAction;
 import pcgen.system.LanguageBundle;
 
 import java.lang.reflect.Method;
 import java.util.StringTokenizer;
 
-class MyActionFactory implements AnnotatedActionFactory {
+class PCGenActionFactory implements AnnotatedActionFactory {
     @Override
     public AnnotatedAction createAction(ActionProxy proxy, Method method, Object target) {
         String text = LanguageBundle.getString(proxy.text());
@@ -22,7 +24,7 @@ class MyActionFactory implements AnnotatedActionFactory {
 
         AnnotatedAction action = new AnnotatedAction(text, method, target);
         if (!graphic.isBlank()) {
-            action.setGraphic(new ImageView(Icons.valueOf(graphic).asJavaFX()));
+            action.setGraphic(new ImageView(Icons.valueOf(graphic).getImageIcon()));
         }
 
         if (!longText.isBlank()) {
@@ -69,37 +71,38 @@ class MyActionFactory implements AnnotatedActionFactory {
 
 
 /*
-    private abstract class CharacterAction extends PCGenAction {
 
-        private final ReferenceFacade<?> ref;
+abstract class CharacterAction extends PCGenAction {
 
-        private CharacterAction(String prop) {
-            this(prop, null, null, null);
-        }
+    private final ReferenceFacade<?> ref;
 
-        private CharacterAction(String prop, String command, String accelerator) {
-            this(prop, command, accelerator, null);
-        }
+    private CharacterAction(String prop) {
+        this(prop, null, null, null);
+    }
 
-        private CharacterAction(String prop, String command, Icons icon) {
-            this(prop, command, null, icon);
-        }
+    private CharacterAction(String prop, String command, String accelerator) {
+        this(prop, command, accelerator, null);
+    }
 
-        private CharacterAction(String prop, String command, String accelerator, Icons icon) {
-            super(prop, command, accelerator, icon);
-            ref = frame.getSelectedCharacterRef();
-            ref.addReferenceListener(new CharacterListener());
-            setEnabled(ref.get() != null);
-        }
+    private CharacterAction(String prop, String command, Icons icon) {
+        this(prop, command, null, icon);
+    }
 
-        private final class CharacterListener implements ReferenceListener<Object> {
+    private CharacterAction(String prop, String command, String accelerator, Icons icon) {
+        super(prop, command, accelerator, icon);
+        ref = frame.getSelectedCharacterRef();
+        ref.addReferenceListener(new CharacterListener());
+        setEnabled(ref.get() != null);
+    }
 
-            @Override
-            public void referenceChanged(ReferenceEvent<Object> e) {
-                setEnabled(e.getNewReference() != null);
-            }
+    private final class CharacterListener implements ReferenceListener<Object> {
 
+        @Override
+        public void referenceChanged(ReferenceEvent<Object> e) {
+            setEnabled(e.getNewReference() != null);
         }
 
     }
+
+}
 */

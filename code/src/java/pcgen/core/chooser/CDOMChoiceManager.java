@@ -26,7 +26,7 @@ import pcgen.cdom.base.ChooseInformation;
 import pcgen.core.Globals;
 import pcgen.core.PlayerCharacter;
 import pcgen.facade.core.ChooserFacade.ChooserTreeViewType;
-import pcgen.gui2.facade.Gui2InfoFactory;
+import pcgen.javafx.facade.Gui2InfoFactory;
 import pcgen.system.LanguageBundle;
 import pcgen.util.Logging;
 import pcgen.util.chooser.ChooserFactory;

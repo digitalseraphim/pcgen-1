@@ -22,7 +22,7 @@ import static org.hamcrest.Matchers.notNullValue;
 
 import java.util.Arrays;
 
-import pcgen.gui2.tools.Icons;
+import pcgen.javafx.tools.Icons;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

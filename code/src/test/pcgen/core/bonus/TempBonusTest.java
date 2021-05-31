@@ -32,7 +32,7 @@ import pcgen.core.Globals;
 import pcgen.core.PlayerCharacter;
 import pcgen.core.spell.Spell;
 import pcgen.facade.core.InfoFacade;
-import pcgen.gui2.facade.TempBonusHelper;
+import pcgen.javafx.facade.TempBonusHelper;
 import pcgen.rules.context.LoadContext;
 
 import org.junit.jupiter.api.Test;

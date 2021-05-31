@@ -18,7 +18,6 @@
  */
 package pcgen.system;
 
-import java.awt.Component;
 import java.awt.Font;
 import java.awt.FontFormatException;
 import java.awt.GraphicsEnvironment;
@@ -27,7 +26,7 @@ import java.io.IOException;
 import java.util.Locale;
 import java.util.logging.Level;
 
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -36,13 +35,11 @@ import pcgen.cdom.formula.PluginFunctionLibrary;
 import pcgen.core.CustomData;
 import pcgen.core.prereq.PrerequisiteTestFactory;
 import pcgen.facade.core.UIDelegate;
-import pcgen.gui2.UIPropertyContext;
-import pcgen.gui2.converter.TokenConverter;
-import pcgen.gui2.dialog.RandomNameDialog;
-import pcgen.gui2.javafx.PCGenFXUIManager;
-import pcgen.gui3.JFXPanelFromResource;
-import pcgen.gui3.dialog.OptionsPathDialogController;
-import pcgen.gui3.preloader.PCGenPreloader;
+//import pcgen.javafx.UIPropertyContext;
+//import pcgen.javafx.converter.TokenConverter;
+//import pcgen.gui2.dialog.RandomNameDialog;
+import pcgen.javafx.PCGenFXUIManager;
+//import pcgen.gui3.dialog.OptionsPathDialogController;
 import pcgen.io.ExportHandler;
 import pcgen.persistence.CampaignFileLoader;
 import pcgen.persistence.GameModeFileLoader;
@@ -58,7 +55,7 @@ import pcgen.system.application.PCGenLoggingDeadlockHandler;
 import pcgen.util.Logging;
 import pcgen.util.PJEP;
 
-import javafx.embed.swing.JFXPanel;
+//import javafx.embed.swing.JFXPanel;
 import net.sourceforge.argparse4j.ArgumentParsers;
 import net.sourceforge.argparse4j.impl.Arguments;
 import net.sourceforge.argparse4j.inf.ArgumentParser;
@@ -144,12 +141,12 @@ public final class Main extends Application
 
 		parseCommands(args);
 
-		if (startNameGen)
-		{
-			Component dialog = new RandomNameDialog(null, null);
-			dialog.setVisible(true);
-			System.exit(0);
-		}
+//		if (startNameGen)
+//		{
+//			Component dialog = new RandomNameDialog(null, null);
+//			dialog.setVisible(true);
+//			System.exit(0);
+//		}
 
 		if (exportSheet == null)
 		{
@@ -273,11 +270,11 @@ public final class Main extends Application
 			String message;
 			message = "This installation of PCGen is missing the following required folders:\n" + missingDirs;
 			Logging.errorPrint(message);
-			if (useGui)
-			{
-				JOptionPane.showMessageDialog(null, message + "\nPlease reinstall PCGen.", Constants.APPLICATION_NAME,
-					JOptionPane.ERROR_MESSAGE);
-			}
+//			if (useGui)
+//			{
+//				JOptionPane.showMessageDialog(null, message + "\nPlease reinstall PCGen.", Constants.APPLICATION_NAME,
+//					JOptionPane.ERROR_MESSAGE);
+//			}
 			System.exit(1);
 		}
 	}
@@ -292,11 +289,11 @@ public final class Main extends Application
 				Logging.errorPrint("No settingsDir specified via -s in batch mode and no default exists.");
 				System.exit(1);
 			}
-			var panel = new JFXPanelFromResource<>(
-					OptionsPathDialogController.class,
-					"OptionsPathDialog.fxml"
-			);
-			panel.showAndBlock("Directory for options.ini location");
+//			var panel = new JFXPanelFromResource<>(
+//					OptionsPathDialogController.class,
+//					"OptionsPathDialog.fxml"
+//			);
+//			panel.showAndBlock("Directory for options.ini location");
 		}
 		PropertyContextFactory.setDefaultFactory(settingsDir);
 
@@ -304,7 +301,7 @@ public final class Main extends Application
 		PropertyContextFactory defaultFactory = PropertyContextFactory.getDefaultFactory();
 		PropertyContext settingscontext = PCGenSettings.getInstance();
 		defaultFactory.registerPropertyContext(settingscontext);
-		defaultFactory.registerPropertyContext(UIPropertyContext.getInstance());
+//		defaultFactory.registerPropertyContext(UIPropertyContext.getInstance());
 		defaultFactory.registerPropertyContext(LegacySettings.getInstance());
 		defaultFactory.loadPropertyContexts();
 		//Make savepath directory if it doesn't exist
@@ -347,7 +344,7 @@ public final class Main extends Application
 		loader.addPluginLoader(PrerequisiteWriterFactory.getInstance());
 		loader.addPluginLoader(PJEP.getJepPluginLoader());
 		loader.addPluginLoader(ExportHandler.getPluginLoader());
-		loader.addPluginLoader(TokenConverter.getPluginLoader());
+//		loader.addPluginLoader(TokenConverter.getPluginLoader());
 		loader.addPluginLoader(PluginManager.getInstance());
 		loader.addPluginLoader(PluginFunctionLibrary.getInstance());
 		return loader;

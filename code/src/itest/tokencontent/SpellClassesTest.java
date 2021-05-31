@@ -31,7 +31,7 @@ import pcgen.cdom.facet.FacetLibrary;
 import pcgen.cdom.facet.SpellListFacet;
 import pcgen.core.PCClass;
 import pcgen.core.spell.Spell;
-import pcgen.gui2.facade.MockUIDelegate;
+import pcgen.javafx.facade.MockUIDelegate;
 import pcgen.rules.persistence.token.CDOMToken;
 import pcgen.rules.persistence.token.ParseResult;
 import pcgen.util.chooser.ChooserFactory;

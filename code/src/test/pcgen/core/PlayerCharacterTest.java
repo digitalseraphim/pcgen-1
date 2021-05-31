@@ -59,7 +59,7 @@ import pcgen.core.display.CharacterDisplay;
 import pcgen.core.pclevelinfo.PCLevelInfo;
 import pcgen.core.spell.Spell;
 import pcgen.core.system.LoadInfo;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.io.exporttoken.StatToken;
 import pcgen.persistence.lst.SimpleLoader;
 import pcgen.rules.context.LoadContext;

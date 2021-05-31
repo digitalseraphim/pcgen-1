@@ -22,7 +22,7 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import pcgen.gui2.tools.DesktopBrowserLauncher;
+import pcgen.javafx.tools.DesktopBrowserLauncher;
 import pcgen.system.LanguageBundle;
 import pcgen.system.PCGenPropBundle;
 	import pcgen.util.Logging;

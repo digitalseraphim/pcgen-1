@@ -44,7 +44,7 @@ import pcgen.core.Globals;
 import pcgen.core.PCAlignment;
 import pcgen.facade.core.CharacterFacade;
 import pcgen.facade.util.WriteableReferenceFacade;
-import pcgen.gui2.facade.UnitSetWrappedReference;
+import pcgen.javafx.facade.UnitSetWrappedReference;
 import pcgen.gui2.tabs.CharacterInfoTab;
 import pcgen.gui2.tabs.TabTitle;
 import pcgen.gui2.tabs.models.ChannelHandler;

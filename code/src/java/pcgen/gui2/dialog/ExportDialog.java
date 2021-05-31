@@ -63,7 +63,7 @@ import pcgen.core.SettingsHandler;
 import pcgen.facade.core.CharacterFacade;
 import pcgen.facade.core.PartyFacade;
 import pcgen.gui2.PCGenFrame;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.gui2.tools.Utility;
 import pcgen.gui2.util.FacadeComboBoxModel;
 import pcgen.gui3.GuiAssertions;

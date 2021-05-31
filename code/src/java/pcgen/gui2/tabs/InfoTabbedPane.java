@@ -49,7 +49,7 @@ import pcgen.cdom.util.CControl;
 import pcgen.core.GameMode;
 import pcgen.facade.core.CharacterFacade;
 import pcgen.facade.core.TodoFacade;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.gui2.tabs.CharacterInfoTab.ModelMap;
 import pcgen.gui2.tools.CharacterSelectionListener;
 import pcgen.gui2.util.DisplayAwareTab;

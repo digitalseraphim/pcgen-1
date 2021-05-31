@@ -19,8 +19,8 @@ package plugin.converter;
 
 import pcgen.cdom.base.CDOMObject;
 import pcgen.core.Ability;
-import pcgen.gui2.converter.event.TokenProcessEvent;
-import pcgen.gui2.converter.event.TokenProcessorPlugin;
+import pcgen.javafx.converter.event.TokenProcessEvent;
+import pcgen.javafx.converter.event.TokenProcessorPlugin;
 
 public class CategoryConvertPlugin implements TokenProcessorPlugin
 {

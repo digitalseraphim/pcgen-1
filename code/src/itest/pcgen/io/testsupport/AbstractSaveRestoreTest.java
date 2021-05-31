@@ -68,7 +68,7 @@ import pcgen.core.PlayerCharacter;
 import pcgen.core.Race;
 import pcgen.core.SettingsHandler;
 import pcgen.core.SizeAdjustment;
-import pcgen.gui2.facade.MockUIDelegate;
+import pcgen.javafx.facade.MockUIDelegate;
 import pcgen.io.PCGIOHandler;
 import pcgen.io.PCGVer2Creator;
 import pcgen.output.channel.ChannelUtilities;

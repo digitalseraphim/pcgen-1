@@ -24,7 +24,7 @@ import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 import pcgen.facade.core.InfoFacade;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.gui2.util.FontManipulation;
 import pcgen.gui3.utilty.ColorUtilty;
 import pcgen.system.LanguageBundle;

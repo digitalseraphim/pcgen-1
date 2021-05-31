@@ -35,7 +35,7 @@ plugins {
 
 javafx {
     version = "14.0.1"
-    modules = [ 'javafx.controls', 'javafx.web', 'javafx.swing', 'javafx.fxml', 'javafx.graphics' ]
+    modules = [ 'javafx.controls', 'javafx.web', 'javafx.fxml', 'javafx.graphics' ]
 
     //Check if running in ide. If so bundles javafx in to jar. If not only compiles so that runtime can add different platform javafx later.
     //Also allows for gradle property which if true will force the single platforms javafx to be bundled to create local build. Can be added in command line with "-PlocalOnly=true."
@@ -90,6 +90,8 @@ sourceSets {
     main {
         java {
             srcDirs 'code/src/java'
+            exclude '**/gui2/**'
+            exclude '/plugin/**'
         }
         resources {
             srcDirs = ['code/src/resources']
@@ -250,7 +252,7 @@ runtime {
     'jdk.jsobject',
     'javafx.controls',
     'javafx.web',
-    'javafx.swing',
+//    'javafx.swing',
     'javafx.fxml',
     'javafx.graphics'
     ]
@@ -665,7 +667,8 @@ allprojects {
                 '-Djavafx.macosx.embedded=true',
 
                 "--module-path", "${projectDir}/mods/lib/",
-                "--add-modules", "javafx.controls,javafx.web,javafx.swing,javafx.fxml",
+                "--add-modules", "javafx.controls,javafx.web,javafx.fxml",
+//                "--add-modules", "javafx.controls,javafx.web,javafx.swing,javafx.fxml",
 
                 //Needed to fix issue with testfx test crashing due to issue with modularity of whole program. Slightly related issue. https://github.com/TestFX/TestFX/issues/638
                 '--add-exports','javafx.graphics/com.sun.javafx.application=ALL-UNNAMED',
@@ -678,7 +681,8 @@ allprojects {
 
             if (name.toLowerCase().contains("test")) {
                 options.compilerArgs << "--module-path" << "${projectDir}/mods/lib/"
-                options.compilerArgs << "--add-modules" << "javafx.controls,javafx.web,javafx.swing,javafx.fxml"
+                options.compilerArgs << "--add-modules" << "javafx.controls,javafx.web,javafx.fxml"
+//                options.compilerArgs << "--add-modules" << "javafx.controls,javafx.web,javafx.swing,javafx.fxml"
             }
             println "Args for for $name are $options.allCompilerArgs"
 

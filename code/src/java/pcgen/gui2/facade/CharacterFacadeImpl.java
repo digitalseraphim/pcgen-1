@@ -149,7 +149,7 @@ import pcgen.facade.util.WriteableReferenceFacade;
 import pcgen.facade.util.event.ChangeListener;
 import pcgen.facade.util.event.ListEvent;
 import pcgen.facade.util.event.ListListener;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.gui2.util.CoreInterfaceUtilities;
 import pcgen.io.ExportException;
 import pcgen.io.ExportHandler;

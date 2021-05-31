@@ -27,7 +27,7 @@ import pcgen.core.EquipmentModifier;
 import pcgen.facade.core.CharacterFacade;
 import pcgen.facade.core.EquipmentFacade;
 import pcgen.facade.core.InfoFacade;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.gui2.util.FontManipulation;
 import pcgen.gui2.util.TreeColumnCellRenderer;
 import pcgen.gui3.utilty.ColorUtilty;

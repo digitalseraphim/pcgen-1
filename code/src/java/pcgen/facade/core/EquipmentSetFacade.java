@@ -23,7 +23,7 @@ import java.util.EventObject;
 
 import pcgen.facade.util.ListFacade;
 import pcgen.facade.util.ReferenceFacade;
-import pcgen.gui2.facade.EquipNode;
+import pcgen.javafx.facade.EquipNode;
 
 /**
  * {@code EquipmentSetFacade}defines the interface layer between the UI

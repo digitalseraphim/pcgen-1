@@ -17,7 +17,7 @@
  */
 package pcgen.cdom.enumeration;
 
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 
 import javafx.scene.paint.Color;
 

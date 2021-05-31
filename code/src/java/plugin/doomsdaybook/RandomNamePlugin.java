@@ -25,8 +25,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTabbedPane;
 
 import pcgen.core.SettingsHandler;
-import pcgen.gui2.doomsdaybook.NameGenPanel;
-import pcgen.gui2.tools.Utility;
+//import pcgen.gui2.doomsdaybook.NameGenPanel;
 import pcgen.pluginmgr.InteractivePlugin;
 import pcgen.pluginmgr.PCGenMessage;
 import pcgen.pluginmgr.PCGenMessageHandler;

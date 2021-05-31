@@ -44,7 +44,7 @@ import pcgen.facade.util.ListFacade;
 import pcgen.facade.util.ListFacades;
 import pcgen.facade.util.ReferenceFacade;
 import pcgen.facade.util.WriteableReferenceFacade;
-import pcgen.gui2.facade.Gui2CampaignInfoFactory;
+import pcgen.javafx.facade.Gui2CampaignInfoFactory;
 import pcgen.persistence.PersistenceManager;
 import pcgen.util.Logging;
 

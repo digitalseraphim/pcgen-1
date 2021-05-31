@@ -44,7 +44,8 @@ import pcgen.cdom.enumeration.Type;
 import pcgen.core.character.EquipSlot;
 import pcgen.core.chooser.CDOMChooserFacadeImpl;
 import pcgen.facade.core.ChooserFacade;
-import pcgen.gui2.facade.Gui2InfoFactory;
+import pcgen.javafx.PCGenFxRoot;
+import pcgen.javafx.facade.Gui2InfoFactory;
 import pcgen.rules.context.AbstractReferenceContext;
 import pcgen.rules.context.LoadContext;
 import pcgen.system.ConfigurationSettings;
@@ -74,7 +75,7 @@ public final class Globals
 	private static final Map<String, Integer> EQ_SLOT_MAP = new HashMap<>();
 
 	// end of filter creation sets
-	private static JFrame rootFrame;
+	private static PCGenFxRoot rootFrame;
 
 	/** whether or not the GUI is used (false for command line) */
 	private static boolean useGUI = true;
@@ -347,7 +348,7 @@ public final class Globals
 	 *
 	 * @param frame the {@code PCGen_Frame1} which is to be root
 	 */
-	public static void setRootFrame(final JFrame frame)
+	public static void setRootFrame(final PCGenFxRoot frame)
 	{
 		rootFrame = frame;
 	}
@@ -357,7 +358,7 @@ public final class Globals
 	 *
 	 * @return the {@code rootFrame} property
 	 */
-	public static JFrame getRootFrame()
+	public static PCGenFxRoot getRootFrame()
 	{
 		return rootFrame;
 	}

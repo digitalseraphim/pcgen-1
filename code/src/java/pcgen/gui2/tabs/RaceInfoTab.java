@@ -45,7 +45,7 @@ import pcgen.facade.core.CharacterFacade;
 import pcgen.facade.core.InfoFactory;
 import pcgen.facade.util.DefaultListFacade;
 import pcgen.facade.util.ListFacade;
-import pcgen.gui2.facade.DelegatingSingleton;
+import pcgen.javafx.facade.DelegatingSingleton;
 import pcgen.gui2.filter.Filter;
 import pcgen.gui2.filter.FilterBar;
 import pcgen.gui2.filter.FilterButton;

@@ -22,7 +22,7 @@ import pcgen.core.Globals;
 import pcgen.core.VariableProcessor;
 import pcgen.facade.core.CharacterFacade;
 import pcgen.facade.util.ReferenceFacade;
-import pcgen.gui2.PCGenFrame;
+import pcgen.javafx.PCGenFxRoot;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -46,7 +46,7 @@ public class CalculatorDialogController
 		String formula = formulaText.getText();
 		// This is really temporary until everything is converted
 		// to JavaFX and we could actually legally access our parent.
-		PCGenFrame rootFrame = (PCGenFrame) Globals.getRootFrame();
+		PCGenFxRoot rootFrame = Globals.getRootFrame();
 		ReferenceFacade<CharacterFacade> selectedCharacterRef = rootFrame.getSelectedCharacterRef();
 		CharacterFacade currentPC = selectedCharacterRef.get();
 

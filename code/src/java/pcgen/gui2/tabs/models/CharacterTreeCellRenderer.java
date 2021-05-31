@@ -19,7 +19,7 @@
 package pcgen.gui2.tabs.models;
 
 import pcgen.facade.core.CharacterFacade;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.gui2.util.TreeColumnCellRenderer;
 import pcgen.gui3.utilty.ColorUtilty;
 

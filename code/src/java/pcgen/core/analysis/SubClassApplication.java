@@ -33,7 +33,7 @@ import pcgen.core.SubClass;
 import pcgen.core.chooser.CDOMChooserFacadeImpl;
 import pcgen.core.prereq.PrereqHandler;
 import pcgen.facade.core.ChooserFacade.ChooserTreeViewType;
-import pcgen.gui2.facade.Gui2InfoFactory;
+import pcgen.javafx.facade.Gui2InfoFactory;
 import pcgen.system.LanguageBundle;
 import pcgen.util.Logging;
 import pcgen.util.chooser.ChooserFactory;

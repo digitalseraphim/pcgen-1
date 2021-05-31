@@ -24,7 +24,7 @@ import pcgen.facade.core.CharacterFacade;
 import pcgen.facade.util.ReferenceFacade;
 import pcgen.facade.util.event.ReferenceEvent;
 import pcgen.facade.util.event.ReferenceListener;
-import pcgen.gui2.PCGenFrame;
+import pcgen.javafx.PCGenFxRoot;
 
 import javafx.scene.Node;
 
@@ -33,7 +33,7 @@ public final class EnabledOnlyWithCharacter implements ReferenceListener<Charact
 	private final ReferenceListener<File> fileListener = new FileRefListener();
 	private final Node node;
 
-	public EnabledOnlyWithCharacter(Node node, PCGenFrame frame)
+	public EnabledOnlyWithCharacter(Node node, PCGenFxRoot frame)
 		{
 			this.node = node;
 			ReferenceFacade<CharacterFacade> ref = frame.getSelectedCharacterRef();

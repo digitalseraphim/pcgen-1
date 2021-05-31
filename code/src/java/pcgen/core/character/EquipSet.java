@@ -30,7 +30,7 @@ import pcgen.core.utils.MessageType;
 import pcgen.core.utils.ShowMessageDelegate;
 import pcgen.facade.core.EquipmentFacade;
 import pcgen.facade.util.DefaultListFacade;
-import pcgen.gui2.facade.EquipNode;
+import pcgen.javafx.facade.EquipNode;
 import pcgen.util.Logging;
 
 /**

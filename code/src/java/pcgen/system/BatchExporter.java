@@ -40,7 +40,7 @@ import pcgen.facade.core.CharacterFacade;
 import pcgen.facade.core.PartyFacade;
 import pcgen.facade.core.SourceSelectionFacade;
 import pcgen.facade.core.UIDelegate;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.io.ExportException;
 import pcgen.io.ExportHandler;
 import pcgen.io.ExportUtilities;

@@ -21,10 +21,10 @@ import java.util.Collection;
 
 import pcgen.cdom.base.CDOMObject;
 import pcgen.cdom.inst.ObjectCache;
-import pcgen.gui2.converter.ConversionDecider;
-import pcgen.gui2.converter.TokenConverter;
-import pcgen.gui2.converter.event.TokenProcessEvent;
-import pcgen.gui2.converter.event.TokenProcessorPlugin;
+import pcgen.javafx.converter.ConversionDecider;
+import pcgen.javafx.converter.TokenConverter;
+import pcgen.javafx.converter.event.TokenProcessEvent;
+import pcgen.javafx.converter.event.TokenProcessorPlugin;
 import pcgen.rules.context.EditorLoadContext;
 import pcgen.rules.context.LoadContext;
 import pcgen.util.Logging;

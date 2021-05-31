@@ -23,7 +23,7 @@ import java.util.List;
 import pcgen.cdom.enumeration.SourceFormat;
 import pcgen.core.Globals;
 import pcgen.core.SettingsHandler;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.gui3.GuiAssertions;
 import pcgen.gui3.ResettableController;
 import pcgen.system.LanguageBundle;

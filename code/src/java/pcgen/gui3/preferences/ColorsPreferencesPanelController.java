@@ -18,7 +18,7 @@
 
 package pcgen.gui3.preferences;
 
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.gui3.GuiAssertions;
 import pcgen.gui3.ResettableController;
 

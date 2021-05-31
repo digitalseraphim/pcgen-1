@@ -31,7 +31,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 import pcgen.core.SettingsHandler;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.persistence.lst.LstFileLoader;
 import pcgen.system.ConfigurationSettings;
 import pcgen.system.LanguageBundle;

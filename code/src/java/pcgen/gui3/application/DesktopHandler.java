@@ -25,7 +25,7 @@ import java.awt.desktop.PreferencesEvent;
 import java.awt.desktop.QuitEvent;
 import java.awt.desktop.QuitResponse;
 
-import pcgen.gui2.PCGenUIManager;
+import pcgen.javafx.PCGenFXUIManager;
 
 /**
  * DesktopHandler handles desktop-initiated events
@@ -75,7 +75,7 @@ public final class DesktopHandler
 		@Override
 		public void handleAbout(final AboutEvent aboutEvent)
 		{
-			PCGenUIManager.displayAboutDialog();
+			PCGenFXUIManager.displayAboutDialog();
 		}
 	}
 
@@ -84,7 +84,7 @@ public final class DesktopHandler
 		@Override
 		public void handlePreferences(final PreferencesEvent preferencesEvent)
 		{
-			PCGenUIManager.displayPreferencesDialog();
+			PCGenFXUIManager.displayPreferencesDialog();
 		}
 	}
 
@@ -93,7 +93,7 @@ public final class DesktopHandler
 		@Override
 		public void handleQuitRequestWith(final QuitEvent quitEvent, final QuitResponse quitResponse)
 		{
-			PCGenUIManager.closePCGen();
+			PCGenFXUIManager.closePCGen();
 		}
 	}
 }

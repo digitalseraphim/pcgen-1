@@ -30,7 +30,7 @@ import pcgen.core.SettingsHandler;
 import pcgen.core.SubClass;
 import pcgen.core.analysis.SubClassApplication;
 import pcgen.core.prereq.PrereqHandler;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 
 /**
  * {@code KitClass} <strong>needs documentation</strong>.

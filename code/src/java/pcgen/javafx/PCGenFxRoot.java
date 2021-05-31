@@ -1,9 +1,12 @@
-package pcgen.gui2.javafx;
+package pcgen.javafx;
 
 import javafx.scene.control.MenuBar;
 import javafx.scene.layout.VBox;
+import pcgen.facade.core.CharacterFacade;
+import pcgen.facade.core.DataSetFacade;
 import pcgen.facade.core.SourceSelectionFacade;
-import pcgen.gui2.UIContext;
+import pcgen.facade.util.ReferenceFacade;
+import pcgen.javafx.UIContext;
 
 import java.io.File;
 
@@ -24,5 +27,13 @@ public class PCGenFxRoot extends VBox {
 
     public boolean loadSourceSelection(SourceSelectionFacade userData) {
         return true;
+    }
+
+    public ReferenceFacade<CharacterFacade> getSelectedCharacterRef() {
+        return null;
+    }
+
+    public ReferenceFacade<DataSetFacade> getLoadedDataSetRef() {
+        return null;
     }
 }

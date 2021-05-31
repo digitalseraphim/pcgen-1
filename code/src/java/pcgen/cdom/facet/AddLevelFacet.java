@@ -31,7 +31,7 @@ import pcgen.core.PCClass;
 import pcgen.core.PCTemplate;
 import pcgen.core.PlayerCharacter;
 import pcgen.core.SettingsHandler;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 
 /**
  * AddLevelFacet performs the addition of levels to a Player Character that are

@@ -27,7 +27,7 @@ import pcgen.core.PaperInfo;
 import pcgen.core.SettingsHandler;
 import pcgen.core.utils.MessageType;
 import pcgen.core.utils.ShowMessageDelegate;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.gui3.GuiAssertions;
 import pcgen.gui3.GuiUtility;
 import pcgen.system.ConfigurationSettings;

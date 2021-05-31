@@ -23,8 +23,8 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 import javafx.scene.paint.Color;
 import pcgen.core.utils.CoreUtility;
-import pcgen.gui2.UIPropertyContext;
-import pcgen.gui2.util.FontManipulation;
+import pcgen.javafx.UIPropertyContext;
+import pcgen.javafx.util.FontManipulation;
 
 public enum Load
 {

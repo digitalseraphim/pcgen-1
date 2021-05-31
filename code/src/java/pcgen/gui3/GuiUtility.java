@@ -22,7 +22,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;
 
 import javafx.application.Platform;
-import javafx.embed.swing.JFXPanel;
+//import javafx.embed.swing.JFXPanel;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
@@ -40,16 +40,16 @@ public final class GuiUtility
 	 * @param parent a javafx Parent to be shown as a swing node
 	 * @return a jfxpanel that eventually gets painted as the parent container
 	 */
-	public static JFXPanel wrapParentAsJFXPanel(Parent parent)
-	{
-		GuiAssertions.assertIsNotJavaFXThread();
-		JFXPanel jfxPanel = new JFXPanel();
-		Platform.runLater(() -> {
-			Scene scene = new Scene(parent);
-			jfxPanel.setScene(scene);
-		});
-		return jfxPanel;
-	}
+//	public static JFXPanel wrapParentAsJFXPanel(Parent parent)
+//	{
+//		GuiAssertions.assertIsNotJavaFXThread();
+//		JFXPanel jfxPanel = new JFXPanel();
+//		Platform.runLater(() -> {
+//			Scene scene = new Scene(parent);
+//			jfxPanel.setScene(scene);
+//		});
+//		return jfxPanel;
+//	}
 
 	public static <T> T runOnJavaFXThreadNow(Supplier<T> supplier)
 	{

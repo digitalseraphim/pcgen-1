@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
 
 import pcgen.core.GameMode;
 import pcgen.core.SettingsHandler;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.gui3.ResettableController;
 import pcgen.system.ConfigurationSettings;
 

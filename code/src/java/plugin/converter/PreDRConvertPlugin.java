@@ -20,8 +20,8 @@ package plugin.converter;
 import java.util.StringTokenizer;
 
 import pcgen.cdom.base.CDOMObject;
-import pcgen.gui2.converter.event.TokenProcessEvent;
-import pcgen.gui2.converter.event.TokenProcessorPlugin;
+import pcgen.javafx.converter.event.TokenProcessEvent;
+import pcgen.javafx.converter.event.TokenProcessorPlugin;
 
 public class PreDRConvertPlugin implements TokenProcessorPlugin
 {

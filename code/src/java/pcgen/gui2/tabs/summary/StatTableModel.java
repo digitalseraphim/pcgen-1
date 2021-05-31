@@ -58,7 +58,7 @@ import pcgen.facade.util.event.ReferenceEvent;
 import pcgen.facade.util.event.ReferenceListener;
 import pcgen.gui2.tabs.Utilities;
 import pcgen.gui2.util.FontManipulation;
-import pcgen.gui2.util.PrettyIntegerFormat;
+import pcgen.javafx.util.PrettyIntegerFormat;
 import pcgen.gui2.util.table.TableCellUtilities;
 
 /**

@@ -80,7 +80,7 @@ import pcgen.facade.util.event.ListEvent;
 import pcgen.facade.util.event.ListListener;
 import pcgen.facade.util.event.ReferenceEvent;
 import pcgen.facade.util.event.ReferenceListener;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.gui2.dialog.CharacterHPDialog;
 import pcgen.gui2.dialog.KitSelectionDialog;
 import pcgen.gui2.dialog.RandomNameDialog;

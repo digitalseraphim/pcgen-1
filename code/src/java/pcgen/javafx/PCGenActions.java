@@ -16,12 +16,11 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  *
  */
-package pcgen.gui2.javafx;
+package pcgen.javafx;
 
 import javafx.event.ActionEvent;
 import org.controlsfx.control.action.ActionMap;
 import org.controlsfx.control.action.ActionProxy;
-import pcgen.gui2.UIContext;
 import pcgen.system.LanguageBundle;
 
 import java.util.Objects;
@@ -104,7 +103,7 @@ public final class PCGenActions {
     private PCGenActions(PCGenFxRoot root, UIContext uiContext) {
         this.uiContext = Objects.requireNonNull(uiContext);
         this.root = root;
-        ActionMap.setActionFactory(new MyActionFactory());
+        ActionMap.setActionFactory(new PCGenActionFactory());
         ActionMap.register(this);
     }
 

@@ -1,6 +1,4 @@
-package pcgen.gui2.javafx;
-
-import pcgen.gui2.tools.Icons;
+package pcgen.javafx;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

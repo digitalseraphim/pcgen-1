@@ -22,7 +22,7 @@ import pcgen.facade.core.DataSetFacade;
 import pcgen.facade.util.ReferenceFacade;
 import pcgen.facade.util.event.ReferenceEvent;
 import pcgen.facade.util.event.ReferenceListener;
-import pcgen.gui2.PCGenFrame;
+import pcgen.javafx.PCGenFxRoot;
 
 import javafx.scene.Node;
 
@@ -30,7 +30,7 @@ public final class EnabledOnlyWithSources implements ReferenceListener<Object>
 {
 	private final Node node;
 
-	public EnabledOnlyWithSources(Node node, PCGenFrame frame)
+	public EnabledOnlyWithSources(Node node, PCGenFxRoot frame)
 	{
 		this.node = node;
 		ReferenceFacade<DataSetFacade> loadedDataSetRef = frame.getLoadedDataSetRef();

@@ -24,8 +24,8 @@ import java.util.List;
 import java.util.Map;
 
 import pcgen.cdom.base.CDOMObject;
-import pcgen.gui2.converter.event.TokenProcessEvent;
-import pcgen.gui2.converter.event.TokenProcessorPlugin;
+import pcgen.javafx.converter.event.TokenProcessEvent;
+import pcgen.javafx.converter.event.TokenProcessorPlugin;
 
 public class ChooseConvertPlugin implements TokenProcessorPlugin
 {

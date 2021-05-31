@@ -1,8 +1,7 @@
-package pcgen.gui2.javafx;
+package pcgen.javafx;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import pcgen.gui2.UIContext;
 import pcgen.system.Main;
 
 public final class PCGenFXUIManager {

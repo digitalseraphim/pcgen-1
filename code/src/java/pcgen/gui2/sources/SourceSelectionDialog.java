@@ -62,7 +62,7 @@ import pcgen.facade.util.ListFacades;
 import pcgen.facade.util.SortedListFacade;
 import pcgen.gui2.PCGenFrame;
 import pcgen.gui2.UIContext;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.gui2.dialog.DataInstaller;
 import pcgen.gui2.tools.CommonMenuText;
 import pcgen.gui2.tools.FlippingSplitPane;

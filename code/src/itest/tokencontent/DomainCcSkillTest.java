@@ -33,7 +33,7 @@ import pcgen.cdom.helper.ClassSource;
 import pcgen.core.Domain;
 import pcgen.core.PCClass;
 import pcgen.core.Skill;
-import pcgen.gui2.facade.MockUIDelegate;
+import pcgen.javafx.facade.MockUIDelegate;
 import pcgen.rules.persistence.token.CDOMToken;
 import pcgen.rules.persistence.token.ParseResult;
 import pcgen.util.chooser.ChooserFactory;

@@ -28,7 +28,7 @@ import pcgen.core.PCClass;
 import pcgen.facade.core.InfoFacade;
 import pcgen.facade.core.SpellFacade;
 import pcgen.facade.core.SpellSupportFacade.SpellNode;
-import pcgen.gui2.UIPropertyContext;
+import pcgen.javafx.UIPropertyContext;
 import pcgen.gui2.tabs.models.CharacterTreeCellRenderer;
 import pcgen.gui2.util.FontManipulation;
 import pcgen.gui3.utilty.ColorUtilty;

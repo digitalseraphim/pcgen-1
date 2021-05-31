@@ -16,12 +16,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  * 
  */
-package pcgen.gui2.javafx.util;
+package pcgen.javafx.util;
 
 import javafx.beans.value.ChangeListener;
 import javafx.collections.ListChangeListener;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.CustomMenuItem;
 import javafx.scene.control.Menu;
@@ -31,6 +29,8 @@ import pcgen.facade.util.ListFacade;
 import pcgen.facade.util.event.ListEvent;
 import pcgen.facade.util.event.ListListener;
 import javafx.scene.control.SeparatorMenuItem;
+import pcgen.javafx.PCGenActions;
+import pcgen.system.LanguageBundle;
 
 import java.util.Objects;
 
@@ -43,12 +43,20 @@ public abstract class AbstractListMenu<E> extends Menu implements ListChangeList
 
 	protected AbstractListMenu(Action action)
 	{
-		this(action, null);
+		this(action.getText(), null);
 	}
 
-	private AbstractListMenu(Action action, ListFacade<E> listModel)
+	protected AbstractListMenu(Action action, ListFacade<E> listModel)
 	{
-		super(action.getText());
+		this(action.getText(), listModel);
+	}
+
+	protected AbstractListMenu(String title){
+		this(title, null);
+	}
+
+	protected AbstractListMenu(String title, ListFacade<E> listModel){
+		super(LanguageBundle.getString(title));
 		setListModel(listModel);
 	}
 

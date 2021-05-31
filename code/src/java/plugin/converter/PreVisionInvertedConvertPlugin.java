@@ -22,8 +22,8 @@ import java.util.List;
 
 import pcgen.base.lang.StringUtil;
 import pcgen.cdom.base.CDOMObject;
-import pcgen.gui2.converter.event.TokenProcessEvent;
-import pcgen.gui2.converter.event.TokenProcessorPlugin;
+import pcgen.javafx.converter.event.TokenProcessEvent;
+import pcgen.javafx.converter.event.TokenProcessorPlugin;
 import pcgen.rules.persistence.token.AbstractPreEqualConvertPlugin;
 
 public class PreVisionInvertedConvertPlugin implements TokenProcessorPlugin

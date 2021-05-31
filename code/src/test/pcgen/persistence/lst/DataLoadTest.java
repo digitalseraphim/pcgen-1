@@ -38,7 +38,7 @@ import pcgen.core.SettingsHandler;
 import pcgen.core.SystemCollections;
 import pcgen.facade.core.SourceSelectionFacade;
 import pcgen.facade.core.UIDelegate;
-import pcgen.gui2.facade.MockUIDelegate;
+import pcgen.javafx.facade.MockUIDelegate;
 import pcgen.persistence.CampaignFileLoader;
 import pcgen.persistence.GameModeFileLoader;
 import pcgen.persistence.SourceFileLoader;
